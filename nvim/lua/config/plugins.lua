@@ -43,19 +43,19 @@ vim.pack.add({
     { src = "https://github.com/rcarriga/nvim-notify" },
 
     -- ============================================
-    -- Estéticos novos
+    -- UWW
     -- ============================================
 
-    -- Dashboard (tela inicial)
+    -- Dashboard 
     { src = "https://github.com/goolord/alpha-nvim" },
 
     -- Abas de buffer no topo
     { src = "https://github.com/akinsho/bufferline.nvim" },
 
-    -- Cores inline (#ff5733, rgb(), tailwind)
+    -- Cores inline 
     { src = "https://github.com/NvChad/nvim-colorizer.lua" },
 
-    -- Destaque de TODOs, FIXMEs, etc.
+    -- TODOs, FIXMEs, etc.
     { src = "https://github.com/folke/todo-comments.nvim" },
 
     -- Destaca ocorrências da palavra sob o cursor
@@ -95,7 +95,7 @@ vim.o.background = "dark"
 vim.cmd("colorscheme distinguished")
 
 -- ====================================
--- Plugins existentes
+-- Plugins
 -- ====================================
 
 require("config.plugins.notify")
@@ -108,7 +108,7 @@ require("config.plugins.cmp")
 require("config.plugins.lsp")
 
 -- ====================================
--- Novos plugins estéticos
+-- plugins skin
 -- ====================================
 
 require("config.plugins.dashboard")
