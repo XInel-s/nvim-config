@@ -1,6 +1,3 @@
--- ====================================
--- Plugins (vim.pack)
--- ====================================
 
 vim.pack.add({
 
@@ -29,7 +26,7 @@ vim.pack.add({
     -- LSP
     { src = "https://github.com/neovim/nvim-lspconfig" },
 
-    -- Treesitter (necessário para barbecue, illuminate, etc.)
+    -- Treesitter
     { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 
     -- Editor
@@ -41,10 +38,6 @@ vim.pack.add({
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/folke/noice.nvim" },
     { src = "https://github.com/rcarriga/nvim-notify" },
-
-    -- ============================================
-    -- UWW
-    -- ============================================
 
     -- Dashboard 
     { src = "https://github.com/goolord/alpha-nvim" },
@@ -64,7 +57,7 @@ vim.pack.add({
     -- Spinner de progresso do LSP
     { src = "https://github.com/j-hui/fidget.nvim" },
 
-    -- Zen mode + dimming de código fora do contexto
+    -- Zen mode + dimming de código
     { src = "https://github.com/folke/zen-mode.nvim" },
     { src = "https://github.com/folke/twilight.nvim" },
 
@@ -75,7 +68,7 @@ vim.pack.add({
     { src = "https://github.com/utilyre/barbecue.nvim" },
     { src = "https://github.com/SmiteshP/nvim-navic" },
 
-    -- Cursor com animação suave
+    -- Cursor com animação
     { src = "https://github.com/sphamba/smear-cursor.nvim" },
 
     -- Markdown renderizado no buffer
@@ -87,16 +80,8 @@ vim.pack.add({
 
 vim.cmd("packloadall")
 
--- ====================================
--- Colorscheme
--- ====================================
-
 vim.o.background = "dark"
 vim.cmd("colorscheme distinguished")
-
--- ====================================
--- Plugins
--- ====================================
 
 require("config.plugins.notify")
 require("config.plugins.noice")
@@ -106,10 +91,6 @@ require("config.plugins.ibl")
 require("config.plugins.lualine")
 require("config.plugins.cmp")
 require("config.plugins.lsp")
-
--- ====================================
--- plugins skin
--- ====================================
 
 require("config.plugins.dashboard")
 require("config.plugins.bufferline")
